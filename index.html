@@ -10,9 +10,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        button{
+            padding: 5px 10px;
+        }
+        p{
+            font-size: 20px;
+            display: inline-block;
+        }
+        button{
+            display: inline-block;
+        }
+    </style>    
 </head>
 <body>
-    <h3>Nhập số vào mảng</h3>
+    <h3>Nhập dữ liệu đầu vào</h3>
+    <form action="">
+    <input type="text" class="w-50 d-inline-block" id="userInput" placeholder="Nhập dữ liệu">
+    </form>
+    <p>Mảng: <span id="input"></span></p>
+    <button onclick="inputAdd(input)">Nhập</button>
+    <h3>Bài 1: Tính tổng các số dương trong mảng</h3>
+    <p>Kết quả: <span id="bai1_output"></span></p>
+    <button onclick="bai1(input)">Tính</button>
+    <h3>Bài 2: Tính số lượng các số dương trong mảng</h3>
+    <p>Kết quả: <span id="bai2_output"></span></p>
+    <button onclick="bai2(input)">Tính</button>
+    <h3>Bài 3: Tìm số nhỏ nhất trong mảng</h3>
+    <p>Kết quả: <span id="bai3_output"></span></p>
+    <button onclick="bai3(input)">Tính</button>
+    <h3>Bài 4: Tìm số dương nhỏ nhất trong mảng</h3>
+    <p>Kết quả: <span id="bai4_output"></span></p>
+    <button onclick="bai4(input)">Tính</button>
+    <h3>Bài 5: Tìm số chẵn cuối cùng trong mảng</h3>
+    <p>Kết quả: <span id="bai5_output"></span></p>
+    <button onclick="bai5(input)">Tính</button>
+    <h3>Bài 6: Đổi chỗ 2 giá trị trong mảng theo vị trí</h3>
+    <input type="text" id="bai6_input1" placeholder="Vị trí số 1">
+    <input type="text" id="bai6_input2" placeholder="Vị trí số 2">
+    <p>Kết quả: <span id="bai6_output"></span></p>
+    <button onclick="bai6(input)">Tính</button>
+    <h3>Bài 7: Sắp xếp mảng theo thứ tự tăng dần</h3>
+    <p>Kết quả: <span id="bai7_output"></span></p>
+    <button onclick="bai7(input)">Tính</button>
+    <h3>Bài 8: Tìm số nguyên tố đầu tiên trong mảng</h3>
+    <p>Kết quả: <span id="bai8_output"></span></p>
+    <button>Tính</button>
+    <h3>Bài 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</h3>
+    <p>Kết quả: <span id="bai9_output"></span></p>
+    <button>Tính</button>
+    <h3>Bài 10: So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</h3>
+    <p>Kết quả: <span id="bai10_output"></span></p>
+    <button>Tính</button>
     <script src="./main.js"></script>
 </body>
 </html>
