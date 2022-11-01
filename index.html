@@ -25,6 +25,7 @@
         }
         button{
             display: inline-block;
+            border: 2px solid black;
         }
     </style>    
 </head>
@@ -60,13 +61,16 @@
     <button onclick="bai7(input)">Tính</button>
     <h3>Bài 8: Tìm số nguyên tố đầu tiên trong mảng</h3>
     <p>Kết quả: <span id="bai8_output"></span></p>
-    <button>Tính</button>
+    <button onclick="bai8(input)">Tính</button>
     <h3>Bài 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</h3>
+    <input type="text" class="w-25 d-inline-block" id="bai9_input" placeholder="Nhập dữ liệu">
+    <p>Mảng: <span id="bai9_array"></span></p>
+    <button onclick="inputAdd2(bai9_array)">Nhập</button> <br>
     <p>Kết quả: <span id="bai9_output"></span></p>
-    <button>Tính</button>
+    <button onclick="bai9(bai9_array)">Tính</button>
     <h3>Bài 10: So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</h3>
     <p>Kết quả: <span id="bai10_output"></span></p>
-    <button>Tính</button>
+    <button onclick="bai10(input)">Tính</button>
     <script src="./main.js"></script>
 </body>
 </html>
